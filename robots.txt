@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://medrealty.github.io/sitemap.xml
