@@ -23,7 +23,7 @@
 <meta name="twitter:description" content="Daily news: Turkey, Cyprus, Greece, Spain. Residency, prices, investment, rentals.">
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Organization","name":"MedRealty","url":"https://medrealty.ru/en/","description":"Mediterranean real estate news aggregator: Turkey, Cyprus, Greece, Spain.","sameAs":["https://t.me/MedRealtyNews","https://vk.com/club238925389"]}
+{"@context":"https://schema.org","@type":"Organization","name":"MedRealty","url":"https://medrealty.ru/en/","description":"Mediterranean real estate news aggregator: Turkey, Cyprus, Greece, Spain.","sameAs":["https://t.me/MedRealtyNews"]}
 </script>
 
 <style>
@@ -63,7 +63,6 @@ footer a{color:var(--accent);text-decoration:none}
 <h1>MedRealty — <span class="tag">Mediterranean real estate</span></h1>
 <p class="lead">Daily news on the property markets of Turkey, Cyprus, Greece, and Spain. Residency, prices, investment, rentals — no fluff, no ads.</p>
 <a class="cta" href="https://t.me/MedRealtyNews" target="_blank" rel="noopener">Subscribe on Telegram →</a>
-            <a class="cta cta-vk" href="https://vk.com/club238925389" target="_blank" rel="noopener" style="background:#0077FF;margin-left:10px">VK ↗</a>
 </div></header>
 
 <section><div class="container">

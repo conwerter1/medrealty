@@ -41,7 +41,7 @@
   "description": "Новостной агрегатор о недвижимости Средиземноморья: Турция, Кипр, Греция, Испания.",
   "sameAs": [
     "https://t.me/MedRealtyNews"
-  ,"https://vk.com/club238925389"]
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -179,7 +179,6 @@ footer a { color: var(--accent); text-decoration: none; }
     <h1>MedRealty — <span class="tag">недвижимость Средиземноморья</span></h1>
     <p class="lead">Ежедневные новости рынка недвижимости Турции, Кипра, Греции и Испании. ВНЖ, цены, инвестиции, аренда — без воды и рекламы.</p>
     <a class="cta" href="https://t.me/MedRealtyNews" target="_blank" rel="noopener">Подписаться в Telegram →</a>
-            <a class="cta cta-vk" href="https://vk.com/club238925389" target="_blank" rel="noopener" style="background:#0077FF;margin-left:10px">VK ↗</a>
     <a class="cta cta-secondary" href="articles.html" style="background:transparent;border:1px solid var(--accent);color:var(--accent);margin-left:10px">Все статьи →</a>
   </div>
 </header>
@@ -233,7 +232,7 @@ footer a { color: var(--accent); text-decoration: none; }
 
 <footer>
   <div class="container">
-    <p>© 2026 MedRealty · <a href="https://t.me/MedRealtyNews">@MedRealtyNews</a> · <a href="https://vk.com/club238925389">VK</a></p>
+    <p>© 2026 MedRealty · <a href="https://t.me/MedRealtyNews">@MedRealtyNews</a></p>
   </div>
 </footer>
 
