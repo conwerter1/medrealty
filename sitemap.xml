@@ -34,6 +34,22 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/articles.html"/>
   </url>
   <url>
+    <loc>https://medrealty.ru/posts/81.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://medrealty.ru/posts/81.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/posts/81.html"/>
+  </url>
+  <url>
+    <loc>https://medrealty.ru/en/posts/81.html</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/posts/81.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://medrealty.ru/posts/81.html"/>
+  </url>
+  <url>
     <loc>https://medrealty.ru/posts/80.html</loc>
     <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
