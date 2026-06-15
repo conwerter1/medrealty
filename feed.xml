@@ -6,8 +6,24 @@
   <atom:link href="https://medrealty.ru/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Ежедневные новости рынка недвижимости Турции, Кипра, Греции, Испании.</description>
   <language>ru</language>
-  <lastBuildDate>Mon, 15 Jun 2026 15:45:06 +0000</lastBuildDate>
+  <lastBuildDate>Mon, 15 Jun 2026 16:15:07 +0000</lastBuildDate>
 
+  <item>
+    <title>Штраф до 25% от налога — вот цена опоздания на итальянский IMU</title>
+    <link>https://telegra.ph/SHtraf-do-25-ot-naloga--vot-cena-opozdaniya-na-italyanskij-IMU-06-15</link>
+    <guid isPermaLink="true">https://telegra.ph/SHtraf-do-25-ot-naloga--vot-cena-opozdaniya-na-italyanskij-IMU-06-15</guid>
+    <description>Штраф до 25% от налога — вот цена опоздания на итальянский IMU
+
+Владельцы второго дома в Италии должны помнить: 16 июня — крайний срок для первого платежа муниципального налога IMU. Второй платёж ждёт в декабре. Налог коварен своей избирательностью: он не касается основного жилья, если вы живёте в Италии больше полугода и зарегистрированы в Anagrafe. Но стоит вам быть нерезидентом — платите на любую собственность. Плюс налог «ловит» люксовую недвижимость (виллы, дворцы, замки в категориях A1, A8, A9), даже если это ваш основной дом.
+
+Сложность в том, что счёта вам не пришлют — считайте сами. Берёте кадастровую стоимость, добавляете 5%, умножаете на коэффициент (зависит от типа имущества) и платите процент от получившейся суммы. Это настолько запутанно, что эксперты советуют нанять коммерциалиста.
+
+Оплатить можно через банк или почту по форме F24, некоторые банки позволяют это сделать онлайн. Если опоздаете — штраф до 25% от суммы налога. Но есть лазейка: процедура ravvedimento operoso позволяет самостоятельно признать ошибку и заплатить со значительно меньшим штрафом.
+
+#Италия #Налоги</description>
+    <pubDate>Mon, 15 Jun 2026 15:55:08 +0000</pubDate>
+    <source url="https://www.thelocal.it/20260615/tax-deadline-nears-for-second-home-owners-in-italy-2">оригинал</source>
+  </item>
   <item>
     <title>На Кипре строительный бум: в январе-феврале выдано на 49% больше разрешений, чем год назад.</title>
     <link>https://telegra.ph/Na-Kipre-stroitelnyj-bum-v-yanvare-fevrale-vydano-na-49-bolshe-razreshenij-chem-god-nazad-06-15</link>
@@ -951,24 +967,6 @@ The Rocks — это амбициозная застройка в районе G
 #Португалия #КоммерческаяНедвижимость</description>
     <pubDate>Tue, 26 May 2026 09:55:22 +0000</pubDate>
     <source url="https://www.theportugalnews.com/news/2026-05-25/commercial-property-prices-rise-in-portugal/1027873">оригинал</source>
-  </item>
-  <item>
-    <title>Испания не может решить жилищный кризис: цены выросли на 13% за год, а людей просто вытесняют из домов.</title>
-    <link>https://telegra.ph/Ispaniya-ne-mozhet-reshit-zhilishchnyj-krizis-ceny-vyrosli-na-13-za-god-a-lyudej-prosto-vytesnyayut-iz-domov-05-26</link>
-    <guid isPermaLink="true">https://telegra.ph/Ispaniya-ne-mozhet-reshit-zhilishchnyj-krizis-ceny-vyrosli-na-13-za-god-a-lyudej-prosto-vytesnyayut-iz-domov-05-26</guid>
-    <description>Испания не может решить жилищный кризис: цены выросли на 13% за год, а людей просто вытесняют из домов.
-
-В мае на улицы Мадрида вышли тысячи испанцев. Молодые люди, учителя, профессора — все они не могут позволить себе квартиру. Даже при экономическом росте зарплаты не поспевают за арендой. Один протестующий сказал: «Нам предлагают только повышение цен и выселение».
-
-Правительство Педро Санчеса выделило 7 млрд евро на строительство государственного жилья на четыре года. Но этого недостаточно — стране не хватает 700 тыс. квартир. Главная проблема: туристические квартиры захватили центры городов (в прошлом году Испанию посетило 97 млн иностранцев), а местные жители вытесняются. Декрет о заморозке арендной платы не прошёл парламент.
-
-Жилищный кризис — это политическая бомба для Санчеса перед выборами 2027 года. В стране сильная традиция собственности на дом, но государственного жилья практически нет. Результат: молодежь живёт с бабушками, а протесты растут.
-
-Источник: Hurriyet Daily News Economy
-
-#Испания #ЖилищныйКризис #Цены</description>
-    <pubDate>Tue, 26 May 2026 08:21:12 +0000</pubDate>
-    <source url="https://www.hurriyetdailynews.com/sanchez-faces-mounting-pressure-over-spains-housing-crisis-222515">оригинал</source>
   </item>
 </channel>
 </rss>
