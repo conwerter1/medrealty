@@ -6,8 +6,28 @@
   <atom:link href="https://medrealty.ru/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Ежедневные новости рынка недвижимости Турции, Кипра, Греции, Испании.</description>
   <language>ru</language>
-  <lastBuildDate>Tue, 16 Jun 2026 11:45:06 +0000</lastBuildDate>
+  <lastBuildDate>Tue, 16 Jun 2026 12:15:06 +0000</lastBuildDate>
 
+  <item>
+    <title>В Италии налог на недвижимость IMU платят все, кроме владельцев главного дома — но есть нюансы.</title>
+    <link>https://telegra.ph/V-Italii-nalog-na-nedvizhimost-IMU-platyat-vse-krome-vladelcev-glavnogo-doma--no-est-nyuansy-06-16</link>
+    <guid isPermaLink="true">https://telegra.ph/V-Italii-nalog-na-nedvizhimost-IMU-platyat-vse-krome-vladelcev-glavnogo-doma--no-est-nyuansy-06-16</guid>
+    <description>В Италии налог на недвижимость IMU платят все, кроме владельцев главного дома — но есть нюансы.
+
+IMU (Unified Municipal Tax) введён в 2012 году и касается второго жилья, люкс-объектов, коммерческой и сельхозземли. Главное: если ты нерезидент Италии — платишь на любую недвижимость. Если резидент — только на второе жилье и дорогие квартиры.
+
+Дважды в год: первый платёж до 16 июня, второй до 16 декабря. Или всё сразу до июня. Сумму считаешь сам — никаких счётов не присылают. Берёшь кадастровую стоимость, прибавляешь 5%, умножаешь на коэффициент (для жилья это 160), потом платишь 0,5–1,06% от полученной суммы — ставка зависит от муниципалитета.
+
+Оплачиваешь через форму F24 в банке или почте. Если опоздаешь — штраф 25% от суммы. Но есть лазейка: если признаешься в задолженности в течение 14 дней, штраф упадёт меньше чем на 1%.
+
+Внимание: в трёх регионах (Фриули-Венеция-Джулия, Больцано, Тренто) свои налоги вместо IMU. Пенсионеры-нерезиденты с итальянской пенсией получают скидку 50%.
+
+Источник: The Local Italy
+
+#Италия #Налоги</description>
+    <pubDate>Tue, 16 Jun 2026 12:00:23 +0000</pubDate>
+    <source url="https://www.thelocal.it/20240614/imu-who-has-to-pay-italys-property-tax">оригинал</source>
+  </item>
   <item>
     <title>В 157 португальских муниципалитетах цены на жилье за 8 лет выросли больше чем вдвое.</title>
     <link>https://telegra.ph/V-157-portugalskih-municipalitetah-ceny-na-zhile-za-8-let-vyrosli-bolshe-chem-vdvoe-06-16</link>
@@ -947,26 +967,6 @@ The Rocks — это амбициозная застройка в районе G
 #Португалия #ЛюксОтель</description>
     <pubDate>Wed, 27 May 2026 01:46:16 +0000</pubDate>
     <source url="https://www.theportugalnews.com/news/2026-05-26/why-troia-peninsula-is-emerging-as-one-of-portugals-most-exclusive-coastal-investment-destinations/1028615">оригинал</source>
-  </item>
-  <item>
-    <title>700 млн евро в один проект — вот что значит уверенность в португальском рынке.</title>
-    <link>https://telegra.ph/700-mln-evro-v-odin-proekt--vot-chto-znachit-uverennost-v-portugalskom-rynke-05-26</link>
-    <guid isPermaLink="true">https://telegra.ph/700-mln-evro-v-odin-proekt--vot-chto-znachit-uverennost-v-portugalskom-rynke-05-26</guid>
-    <description>700 млн евро в один проект — вот что значит уверенность в португальском рынке.
-
-Британская инвестиционная группа Arrow Global, которая управляет более чем 100 млрд евро, вложила эту сумму в Palmares в Лагосе. Это не просто ещё один люкс-комплекс на Алгарве. Это сигнал: крупные международные игроки видят в Португалии долгосрочный потенциал, а не краткосрочную спекуляцию.
-
-Проект интересен тем, что это не просто жилые дома. Это целая экосистема: отель JW Marriott, резиденции с архитектурой мирового уровня (проект уже получил престижную Pritzker Award), туризм и lifestyle в одном месте. Arrow уже вложила более 500 млн евро в Виламуру и продолжает развивать новые площадки. Это стратегическое решение, а не случайный ход.
-
-В чём суть? Такие проекты создают рабочие места, привлекают капитал, повышают международный имидж страны. И главное — они показывают, что Португалия может предложить не только дешевизну, но и качество, стабильность и исполнение.
-
-Португалии нужно больше таких инвесторов с видением и ресурсами, чтобы это не были исключения, а норма.
-
-Источник: Portugal News
-
-#Португалия #Инвестиции #Люкс</description>
-    <pubDate>Tue, 26 May 2026 13:31:26 +0000</pubDate>
-    <source url="https://www.theportugalnews.com/news/2026-05-26/investment-with-scale-what-projects-like-palmares-say-about-the-future-of-real-estate-in-portugal/1028311">оригинал</source>
   </item>
 </channel>
 </rss>
