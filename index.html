@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#1a1410">
 <title>MedRealty — Новости недвижимости Средиземноморья | Telegram-канал</title>
-<meta name="description" content="Telegram-канал MedRealty: ежедневные новости рынка недвижимости Турции, Кипра, Греции, Испании. ВНЖ, цены, инвестиции, аренда. Бесплатная подписка.">
+<meta name="description" content="MedRealty — деловой журнал о недвижимости Португалии, Испании, Кипра, Италии, Греции и Турции. Цены, законы, ВНЖ и инвестиции.">
 <meta name="keywords" content="недвижимость средиземноморья, недвижимость кипра, недвижимость турции, недвижимость греции, недвижимость испании, ВНЖ за недвижимость, инвестиции в недвижимость, telegram канал недвижимость">
 <meta name="robots" content="index,follow,max-image-preview:large">
 <meta name="author" content="MedRealty">
@@ -77,12 +77,14 @@ body::after{
   background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/></filter><rect width='200' height='200' filter='url(%23n)'/></svg>")
 }
 .container{max-width:1240px;margin:0 auto;padding:0 48px;position:relative;z-index:1}
-.topbar{display:flex;align-items:center;justify-content:space-between;padding:22px 0;border-bottom:1px solid var(--line);font-size:13px;letter-spacing:.04em;text-transform:uppercase}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:18px 0;border-bottom:1px solid var(--line);font-size:13px;letter-spacing:.04em;text-transform:uppercase;position:sticky;top:0;z-index:20;background:rgba(244,237,227,.94);backdrop-filter:blur(14px)}
 .brand{font-family:'Fraunces',serif;font-weight:900;font-size:24px;letter-spacing:-.02em;text-transform:none;color:var(--ink);text-decoration:none}
 .brand i{font-style:italic;font-weight:400;color:var(--terracotta)}
 .topbar nav{display:flex;gap:32px}
 .topbar nav a{color:var(--ink-soft);text-decoration:none;transition:color .2s}
 .topbar nav a:hover{color:var(--terracotta)}
+.topbar .live{display:inline-flex;align-items:center;gap:7px;color:var(--sea);font-size:10px;font-weight:700;letter-spacing:.14em}
+.topbar .live::before{content:'';width:7px;height:7px;border-radius:50%;background:#3d8b65;box-shadow:0 0 0 4px rgba(61,139,101,.12)}
 .lang{display:flex;gap:8px}
 .lang a{padding:5px 11px;border:1px solid var(--line);border-radius:2px;font-size:12px;text-decoration:none;color:var(--ink-soft);transition:all .2s}
 .lang a.active{background:var(--ink);color:var(--paper);border-color:var(--ink)}
@@ -90,6 +92,11 @@ body::after{
 .issue-strip{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
 .issue-strip .left{display:flex;gap:32px;flex-wrap:wrap}
 .issue-strip strong{color:var(--ink);font-weight:600}
+.topic-strip{display:flex;gap:9px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line);overflow-x:auto;scrollbar-width:none}
+.topic-strip::-webkit-scrollbar{display:none}
+.topic-strip .label{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);white-space:nowrap;margin-right:6px}
+.topic-strip a{font-size:12px;color:var(--ink);text-decoration:none;border:1px solid var(--line);background:var(--paper);padding:8px 13px;white-space:nowrap;transition:.2s}
+.topic-strip a:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .hero{display:grid;grid-template-columns:1.4fr 1fr;gap:64px;padding:80px 0 64px;align-items:end;border-bottom:1px solid var(--line);position:relative}
 .eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--terracotta);margin-bottom:24px;display:flex;align-items:center;gap:14px;font-weight:500}
 .eyebrow::before{content:'';width:32px;height:1px;background:var(--terracotta)}
@@ -97,6 +104,8 @@ body::after{
 .hero h1 .em{font-style:italic;font-weight:500;color:var(--terracotta)}
 .hero h1 .small{font-size:.62em;font-weight:400;font-style:italic;color:var(--ink-soft);display:block;margin-top:8px}
 .hero .lead{font-size:18px;line-height:1.5;color:var(--ink-soft);max-width:560px;margin-bottom:36px}
+.editorial-note{display:flex;gap:18px;align-items:center;margin-top:22px;padding-top:18px;border-top:1px solid var(--line);font-size:11px;letter-spacing:.06em;color:var(--ink-soft)}
+.editorial-note strong{color:var(--ink);font-weight:600}
 .cta-row{display:flex;gap:14px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:2px;font-size:14px;font-weight:500;letter-spacing:.02em;text-decoration:none;transition:all .2s;border:1px solid transparent;cursor:pointer}
 .btn.primary{background:var(--ink);color:var(--paper)}
@@ -166,6 +175,9 @@ footer{padding:48px 0 36px;font-size:13px;color:var(--ink-soft)}
   .container{padding:0 24px}
   .topbar{flex-wrap:wrap;gap:16px}
   .topbar nav{display:none}
+  .topbar .live{display:none}
+  .issue-strip .left span:nth-child(2){display:none}
+  .topic-strip{margin-right:-24px;padding-right:24px}
   .hero{grid-template-columns:1fr;gap:40px;padding:48px 0}
   .featured{padding-left:0;border-left:none;border-top:1px solid var(--line);padding-top:32px}
   .stats{grid-template-columns:repeat(2,1fr);gap:24px}
@@ -183,6 +195,7 @@ footer{padding:48px 0 36px;font-size:13px;color:var(--ink-soft)}
       <a href="#regions">Регионы</a>
       <a href="https://t.me/MedRealtyNews">Telegram</a>
     </nav>
+    <span class="live">Обновляется ежедневно</span>
     <div class="lang">
       <a class="active" href="/">RU</a>
       <a href="/en/">EN</a>
@@ -198,6 +211,16 @@ footer{padding:48px 0 36px;font-size:13px;color:var(--ink-soft)}
     <div>medrealty.ru</div>
   </div>
 
+  <nav class="topic-strip" aria-label="Темы публикаций">
+    <span class="label">Темы</span>
+    <a href="/articles.html?topic=prices">Цены</a>
+    <a href="/articles.html?topic=law">Законы</a>
+    <a href="/articles.html?topic=residency">ВНЖ</a>
+    <a href="/articles.html?topic=tax">Налоги</a>
+    <a href="/articles.html?topic=rent">Аренда</a>
+    <a href="/articles.html?topic=investment">Инвестиции</a>
+  </nav>
+
   <section class="hero" id="hero">
     <div>
       <div class="eyebrow">Недвижимость · Аналитика · ВНЖ</div>
@@ -208,12 +231,13 @@ footer{padding:48px 0 36px;font-size:13px;color:var(--ink-soft)}
         <span class="small">— без розовых очков и без жадности риелтора</span>
       </h1>
       <p class="lead">
-        Ежедневный обзор рынка: Турция, Кипр, Греция, Испания. Цены, законы, ВНЖ, инвестиции. Читают те, кто принимает решения на €100K+.
+        Ежедневный обзор рынков Португалии, Испании, Кипра, Италии, Греции и Турции. Цены, законы, ВНЖ и инвестиции — с прямыми ссылками на первоисточники.
       </p>
       <div class="cta-row">
         <a class="btn primary" href="https://t.me/MedRealtyNews" target="_blank" rel="noopener">Подписаться в Telegram <span class="arrow">→</span></a>
         <a class="btn secondary" href="/articles.html">Все статьи <span class="arrow">↓</span></a>
       </div>
+      <div class="editorial-note"><strong>Независимая редакция</strong><span>Без комиссий застройщиков</span><span>Источники у каждой статьи</span></div>
     </div>
     <div class="featured">
       <div class="label">— Свежие материалы</div>
