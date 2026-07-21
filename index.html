@@ -129,6 +129,23 @@ body::after{
 .stat .num{font-family:'Fraunces',serif;font-weight:900;font-size:56px;letter-spacing:-.03em;line-height:1}
 .stat .num.accent{color:var(--terracotta)}
 .stat .lbl{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-top:10px}
+.radar{padding:72px 0;border-bottom:1px solid var(--line)}
+.radar-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:30px}
+.radar .eyebrow{margin-bottom:12px}
+.radar h2{font-family:'Fraunces',serif;font-size:clamp(36px,4.5vw,56px);line-height:1.05;font-weight:500;letter-spacing:-.03em}
+.radar h2 .em{font-style:italic;color:var(--terracotta)}
+.radar-intro{color:var(--ink-soft);max-width:520px;justify-self:end;line-height:1.6}
+.radar-note{font-size:11px;letter-spacing:.06em;color:var(--ink-soft);margin-top:18px}
+.radar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.radar-card{background:var(--paper);padding:24px;min-height:180px;display:flex;flex-direction:column}
+.radar-card .top{display:flex;justify-content:space-between;gap:18px;align-items:baseline;margin-bottom:22px}
+.radar-card h3{font-family:'Fraunces',serif;font-size:25px;font-weight:600}
+.radar-card .value{font-family:'Fraunces',serif;font-size:30px;color:var(--terracotta);font-weight:700}
+.radar-card .metric{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft)}
+.radar-bar{height:3px;background:var(--line);margin:12px 0 16px;overflow:hidden}
+.radar-bar span{display:block;height:100%;background:var(--sea)}
+.radar-card a{font-size:13px;line-height:1.45;color:var(--ink);text-decoration:none;margin-top:auto}
+.radar-card a:hover{color:var(--terracotta)}
 .regions{padding:80px 0 64px;border-bottom:1px solid var(--line)}
 .regions-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:42px;flex-wrap:wrap;gap:16px}
 .regions-head .title{font-family:'Fraunces',serif;font-size:42px;font-weight:500;letter-spacing:-.02em}
@@ -181,9 +198,21 @@ footer{padding:48px 0 36px;font-size:13px;color:var(--ink-soft)}
   .hero{grid-template-columns:1fr;gap:40px;padding:48px 0}
   .featured{padding-left:0;border-left:none;border-top:1px solid var(--line);padding-top:32px}
   .stats{grid-template-columns:repeat(2,1fr);gap:24px}
+  .radar-head{grid-template-columns:1fr}
+  .radar-intro{justify-self:start}
+  .radar-grid{grid-template-columns:1fr 1fr}
   .region-grid{grid-template-columns:1fr 1fr}
   .cta-inner{grid-template-columns:1fr;text-align:center}
   .foot-grid{grid-template-columns:1fr 1fr;gap:32px}
+}
+@media(max-width:600px){
+  .container{padding:0 20px}
+  .hero h1{font-size:46px}
+  .editorial-note{align-items:flex-start;flex-direction:column;gap:7px}
+  .radar-grid,.region-grid{grid-template-columns:1fr}
+  .stats{gap:18px}
+  .stat .num{font-size:44px}
+  .foot-grid{grid-template-columns:1fr}
 }
 </style><body>
 <div class="container">
@@ -267,6 +296,48 @@ footer{padding:48px 0 36px;font-size:13px;color:var(--ink-soft)}
     <div class="stat"><div class="num">7/7</div><div class="lbl">Дней в неделю</div></div>
   </section>
 <!-- AUTO_STATS_END -->
+
+<!-- AUTO_RADAR_START -->
+  <section class="radar" aria-labelledby="radar-title">
+    <div class="radar-head">
+      <div><div class="eyebrow">Редакционный радар</div><h2 id="radar-title">Что происходит <span class="em">сейчас</span></h2></div>
+      <p class="radar-intro">Активность новостного потока по странам за последние 30 дней. Чем больше материалов, тем чаще рынок попадал в повестку.</p>
+    </div>
+    <div class="radar-grid">
+      <article class="radar-card">
+        <div class="top"><h3>Португалия</h3><div><div class="value">24</div><div class="metric">за 30 дней</div></div></div>
+        <div class="radar-bar" aria-hidden="true"><span style="width:100%"></span></div>
+        <a href="/posts/169.html">37 гектаров португальского острова с работающей рыбофермой уходят с молотка за 750 тысяч евро</a>
+      </article>
+      <article class="radar-card">
+        <div class="top"><h3>Испания</h3><div><div class="value">8</div><div class="metric">за 30 дней</div></div></div>
+        <div class="radar-bar" aria-hidden="true"><span style="width:33%"></span></div>
+        <a href="/posts/168.html">Продавать квартиру в Испании теперь в два раза дольше, чем год назад. Если раньше дом уходил за 2-3 недели, то сейчас ждут 6-9 недель.</a>
+      </article>
+      <article class="radar-card">
+        <div class="top"><h3>Кипр</h3><div><div class="value">16</div><div class="metric">за 30 дней</div></div></div>
+        <div class="radar-bar" aria-hidden="true"><span style="width:67%"></span></div>
+        <a href="/posts/160.html">Никосия дешевле Парижа в 3 раза — и это не предел.</a>
+      </article>
+      <article class="radar-card">
+        <div class="top"><h3>Италия</h3><div><div class="value">6</div><div class="metric">за 30 дней</div></div></div>
+        <div class="radar-bar" aria-hidden="true"><span style="width:25%"></span></div>
+        <a href="/posts/165.html">На покупке дома в Италии можно сэкономить 7000 евро — и это только начало.</a>
+      </article>
+      <article class="radar-card">
+        <div class="top"><h3>Греция</h3><div><div class="value">5</div><div class="metric">за 30 дней</div></div></div>
+        <div class="radar-bar" aria-hidden="true"><span style="width:21%"></span></div>
+        <a href="/posts/149.html">Крупнейший греческий застройщик Lamda Development потерял 17,7 млн евро в первом квартале 2026 года. Причина — масштабные вложения в проект Hellinikon, легендарный комплекс на месте бывшего аэропорта Афин.</a>
+      </article>
+      <article class="radar-card">
+        <div class="top"><h3>Турция</h3><div><div class="value">0</div><div class="metric">за 30 дней</div></div></div>
+        <div class="radar-bar" aria-hidden="true"><span style="width:0%"></span></div>
+        <a href="/posts/67.html">Турецкое побережье дорожает на 20-25% в год. Вот что происходит на рынке недвижимости в 2026-м.</a>
+      </article>
+    </div>
+    <p class="radar-note">Это редакционный индикатор активности новостей, а не индекс изменения цен.</p>
+  </section>
+<!-- AUTO_RADAR_END -->
 
 <!-- AUTO_REGIONS_START -->
   <section class="regions" id="regions">
