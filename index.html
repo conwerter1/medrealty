@@ -125,7 +125,7 @@ body::after{
 .regions-head .title{font-family:'Fraunces',serif;font-size:42px;font-weight:500;letter-spacing:-.02em}
 .regions-head .title .num{font-size:16px;color:var(--terracotta);margin-left:8px;vertical-align:super;font-weight:700;font-family:'Inter',sans-serif}
 .regions-head .sort{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft)}
-.region-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr .9fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.region-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
 .region-card{background:var(--paper);padding:36px 28px;display:flex;flex-direction:column;min-height:260px;cursor:pointer;transition:background .25s;position:relative;overflow:hidden;text-decoration:none;color:inherit}
 .region-card:hover{background:var(--bg-alt)}
 .region-card::before{content:attr(data-letter);position:absolute;top:-40px;right:-15px;font-family:'Fraunces',serif;font-style:italic;font-weight:400;font-size:240px;color:var(--ink);opacity:.05;line-height:1;pointer-events:none}
@@ -191,8 +191,8 @@ footer{padding:48px 0 36px;font-size:13px;color:var(--ink-soft)}
 
   <div class="issue-strip">
     <div class="left">
-      <span>Выпуск <strong>№ 60</strong></span>
-      <span>Июнь 2026</span>
+      <span>Выпуск <strong>№ 169</strong></span>
+      <span>Июль 2026</span>
       <span>Без воды и рекламы</span>
     </div>
     <div>medrealty.ru</div>
@@ -217,65 +217,85 @@ footer{padding:48px 0 36px;font-size:13px;color:var(--ink-soft)}
     </div>
     <div class="featured">
       <div class="label">— Свежие материалы</div>
+<!-- AUTO_FEATURED_START -->
       <article>
-        <div class="meta"><span class="country">🇨🇾 Кипр</span><span>·</span><span>1 июня</span></div>
-        <h3><a href="/posts/60.html">Трагедия в Лимасоле обнажила системный кризис управления многоквартирными домами</a></h3>
+        <div class="meta"><span class="country">Португалия</span><span>·</span><span>21 июля</span></div>
+        <h3><a href="/posts/169.html">37 гектаров португальского острова с работающей рыбофермой уходят с молотка за 750 тысяч евро</a></h3>
       </article>
       <article>
-        <div class="meta"><span class="country">🇪🇸 Испания</span><span>·</span><span>31 мая</span></div>
-        <h3><a href="/posts/59.html">Немцы покупают испанскую недвижимость медленнее, чем год назад</a></h3>
+        <div class="meta"><span class="country">Испания</span><span>·</span><span>21 июля</span></div>
+        <h3><a href="/posts/168.html">Продавать квартиру в Испании теперь в два раза дольше, чем год назад. Если раньше дом уходил за 2-3 недели, то сейчас ждут 6-9 недель.</a></h3>
       </article>
       <article>
-        <div class="meta"><span class="country">🇵🇹 Португалия</span><span>·</span><span>30 мая</span></div>
-        <h3><a href="/posts/58.html">Каждый четвёртый покупатель недвижимости в Португалии — иностранец</a></h3>
+        <div class="meta"><span class="country">Испания</span><span>·</span><span>21 июля</span></div>
+        <h3><a href="/posts/167.html">90% населения Каталонии живёт в зонах с контролем арендной платы — и это только начало войны политиков против инвесторов.</a></h3>
       </article>
+<!-- AUTO_FEATURED_END -->
     </div>
     <div class="flourish">M</div>
   </section>
 
+<!-- AUTO_STATS_START -->
   <section class="stats">
-    <div class="stat"><div class="num accent">60</div><div class="lbl">Статей в архиве</div></div>
-    <div class="stat"><div class="num">4</div><div class="lbl">Страны покрытия</div></div>
-    <div class="stat"><div class="num">8</div><div class="lbl">RSS-источников</div></div>
+    <div class="stat"><div class="num accent">169</div><div class="lbl">Статей в архиве</div></div>
+    <div class="stat"><div class="num">6</div><div class="lbl">Стран покрытия</div></div>
+    <div class="stat"><div class="num">11</div><div class="lbl">RSS-источников</div></div>
     <div class="stat"><div class="num">7/7</div><div class="lbl">Дней в неделю</div></div>
   </section>
+<!-- AUTO_STATS_END -->
 
+<!-- AUTO_REGIONS_START -->
   <section class="regions" id="regions">
     <div class="regions-head">
-      <div class="title">География <span class="num">04</span></div>
+      <div class="title">География <span class="num">06</span></div>
       <div class="sort">— По объёму материалов</div>
     </div>
     <div class="region-grid">
+      <a class="region-card" data-letter="P" href="/articles.html#португалия">
+        <div class="code"><i>Portugal</i></div>
+        <h4>Португалия</h4>
+        <div class="count">46 статей · €</div>
+        <div class="desc">Цены, инвестиции, ВНЖ и новые проекты Лиссабона, Порту и побережья.</div>
+        <div class="read">→ Читать раздел</div>
+      </a>
       <a class="region-card" data-letter="E" href="/articles.html#испания">
         <div class="code"><i>España</i></div>
         <h4>Испания</h4>
-        <div class="count">14 статей · €</div>
-        <div class="desc">Кризис аренды, миграционная политика, рекордные цены вторичного жилья, удар по краткосрочной сдаче.</div>
+        <div class="count">35 статей · €</div>
+        <div class="desc">Аренда, иностранные покупатели, цены и регулирование рынка жилья.</div>
         <div class="read">→ Читать раздел</div>
       </a>
       <a class="region-card" data-letter="K" href="/articles.html#кипр">
         <div class="code"><i>Κύπρος</i></div>
         <h4>Кипр</h4>
-        <div class="count">13 статей · €</div>
-        <div class="desc">Permanent Residency, налоговое резидентство, новостройки Лимасол-Пафос, цены первой линии.</div>
+        <div class="count">34 статьи · €</div>
+        <div class="desc">Налоги, новостройки, инвестиции и недвижимость Лимасола, Пафоса и Никосии.</div>
         <div class="read">→ Читать раздел</div>
       </a>
-      <a class="region-card" data-letter="T" href="/articles.html#турция">
-        <div class="code"><i>Türkiye</i></div>
-        <h4>Турция</h4>
-        <div class="count">7 статей · ₺</div>
-        <div class="desc">Стамбул, Анталья, Бодрум. Налоги, иностранные инвесторы, программы ВНЖ.</div>
+      <a class="region-card" data-letter="I" href="/articles.html#италия">
+        <div class="code"><i>Italia</i></div>
+        <h4>Италия</h4>
+        <div class="count">24 статьи · €</div>
+        <div class="desc">Налоги, льготы, аукционы и покупка недвижимости иностранцами.</div>
         <div class="read">→ Читать раздел</div>
       </a>
       <a class="region-card" data-letter="E" href="/articles.html#греция">
         <div class="code"><i>Ελλάδα</i></div>
         <h4>Греция</h4>
-        <div class="count">7 статей · €</div>
-        <div class="desc">Golden Visa, Афины, острова, доходность аренды по регионам.</div>
+        <div class="count">20 статей · €</div>
+        <div class="desc">Golden Visa, Афины, острова, цены и доходность недвижимости.</div>
+        <div class="read">→ Читать раздел</div>
+      </a>
+      <a class="region-card" data-letter="T" href="/articles.html#турция">
+        <div class="code"><i>Türkiye</i></div>
+        <h4>Турция</h4>
+        <div class="count">10 статей · ₺</div>
+        <div class="desc">Стамбул, Анталья и побережье: налоги, ВНЖ и иностранные инвесторы.</div>
         <div class="read">→ Читать раздел</div>
       </a>
     </div>
   </section>
+<!-- AUTO_REGIONS_END -->
 
   <section class="manifesto">
     <div class="manifesto-inner">
