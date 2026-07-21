@@ -79,6 +79,7 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;bac
 .card-links a.primary{color:var(--terracotta);font-weight:600;letter-spacing:.04em;text-transform:uppercase;font-size:11px}
 .card-links a.primary .ar{display:inline-block;transition:transform .2s}
 .card-links a.primary:hover .ar{transform:translateX(4px)}
+.archive-tools{display:flex;gap:10px;margin-top:28px;max-width:760px}.archive-search{flex:1;padding:14px 16px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font:14px Inter,sans-serif}.archive-search:focus{outline:2px solid var(--terracotta);outline-offset:1px}.archive-reset{padding:0 18px;border:1px solid var(--ink);background:var(--ink);color:var(--paper);cursor:pointer}.archive-status{margin-top:10px;font-size:12px;color:var(--ink-soft);letter-spacing:.06em}
 .cta-block{padding:64px 0;background:var(--ink);color:var(--paper);margin-left:calc(-50vw + 50%);margin-right:calc(-50vw + 50%);padding-left:32px;padding-right:32px;text-align:center}
 .cta-block .label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
 .cta-block h2{font-family:'Fraunces',serif;font-weight:500;font-size:clamp(32px,4vw,48px);letter-spacing:-.02em;line-height:1.1;margin-bottom:14px;max-width:760px;margin-left:auto;margin-right:auto}
@@ -115,6 +116,8 @@ footer.site a{color:var(--terracotta);text-decoration:none;margin:0 14px}
     <h1>All <span class="em">articles</span><br>MedRealty</h1>
     <p class="lead">169 stories on Mediterranean real estate. Grouped by country, sorted from newest to oldest. Last updated July 21, 2026.</p>
     <div class="toc"><a href="#cyprus">🇨🇾 Cyprus <span class="ct">34</span></a> <a href="#turkey">🇹🇷 Turkey <span class="ct">9</span></a> <a href="#greece">🇬🇷 Greece <span class="ct">20</span></a> <a href="#spain">🇪🇸 Spain <span class="ct">37</span></a> <a href="#portugal">🇵🇹 Portugal <span class="ct">44</span></a> <a href="#italy">🇮🇹 Italy <span class="ct">24</span></a> <a href="#mediterranean">🌊 Mediterranean <span class="ct">1</span></a></div>
+    <div class="archive-tools" role="search"><input class="archive-search" id="archiveSearch" type="search" placeholder="Search titles, countries and topics" autocomplete="off" aria-label="Search the archive"><button class="archive-reset" id="archiveReset" type="button">Reset</button></div>
+    <div class="archive-status" id="archiveStatus" aria-live="polite">Showing: 169</div>
   </section>
   <main>
     <section class="region-section" id="cyprus">
@@ -2223,5 +2226,15 @@ footer.site a{color:var(--terracotta);text-decoration:none;margin:0 14px}
     © 2026 MedRealty · <a href="/en/">Home</a> · <a href="/articles.html">RU version</a> · <a href="/feed.xml">RSS</a>
   </footer>
 </div>
+<script>
+(() => {
+ const input=document.getElementById('archiveSearch'),reset=document.getElementById('archiveReset'),status=document.getElementById('archiveStatus');
+ const cards=[...document.querySelectorAll('.card')],sections=[...document.querySelectorAll('.region-section')];
+ const topics={prices:'price prices market growth',law:'law court rules regulation',residency:'residency visa permit citizenship',tax:'tax taxes duty',rent:'rent rental tenant',investment:'investment yield fund'};
+ const params=new URLSearchParams(location.search);input.value=topics[params.get('topic')]||params.get('q')||'';
+ function apply(){const terms=input.value.toLowerCase().trim().split(/\s+/).filter(Boolean);let visible=0;cards.forEach(card=>{const show=terms.every(t=>card.textContent.toLowerCase().includes(t));card.hidden=!show;if(show)visible++});sections.forEach(s=>s.hidden=!s.querySelector('.card:not([hidden])'));status.textContent=(terms.length?'Found: ':'Showing: ')+visible}
+ input.addEventListener('input',apply);reset.addEventListener('click',()=>{input.value='';history.replaceState(null,'',location.pathname);apply();input.focus()});apply();
+})();
+</script>
 </body>
 </html>
