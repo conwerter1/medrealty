@@ -34,6 +34,42 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/articles.html"/>
   </url>
   <url>
+    <loc>https://medrealty.ru/countries/portugal.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medrealty.ru/countries/spain.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medrealty.ru/countries/cyprus.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medrealty.ru/countries/italy.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medrealty.ru/countries/greece.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://medrealty.ru/countries/turkey.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://medrealty.ru/posts/169.html</loc>
     <lastmod>2026-07-21</lastmod>
     <changefreq>weekly</changefreq>
