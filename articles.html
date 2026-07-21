@@ -53,6 +53,13 @@ body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:0;bac
 .toc a:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .toc a .ct{color:var(--ink-soft);font-size:12px}
 .toc a:hover .ct{color:var(--gold)}
+.archive-tools{display:grid;grid-template-columns:1fr auto;gap:14px;margin-top:18px;align-items:center}
+.archive-search{width:100%;border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:13px 16px;font:inherit;border-radius:2px;outline:none}
+.archive-search:focus{border-color:var(--terracotta);box-shadow:0 0 0 3px rgba(192,83,47,.1)}
+.archive-reset{border:1px solid var(--line);background:transparent;color:var(--ink-soft);padding:13px 16px;font:inherit;font-size:12px;cursor:pointer}
+.archive-reset:hover{background:var(--ink);color:var(--paper)}
+.archive-status{font-size:12px;color:var(--ink-soft);margin-top:12px;letter-spacing:.04em}
+.card[hidden],.region-section[hidden]{display:none}
 .region-section{padding:64px 0 56px;border-bottom:1px solid var(--line);scroll-margin-top:24px}
 .region-section:last-child{border-bottom:none}
 .region-header{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:36px;flex-wrap:wrap;gap:16px;padding-bottom:18px;border-bottom:1px solid var(--line)}
@@ -94,6 +101,7 @@ footer.site a{color:var(--terracotta);text-decoration:none;margin:0 14px}
   .topbar nav{display:none}
   .cards{grid-template-columns:1fr}
   .region-header{flex-direction:column;align-items:flex-start;gap:8px}
+  .archive-tools{grid-template-columns:1fr}
 }
 </style>
 <script type="text/javascript">
@@ -123,6 +131,11 @@ footer.site a{color:var(--terracotta);text-decoration:none;margin:0 14px}
     <h1>Все <span class="em">статьи</span><br>MedRealty</h1>
     <p class="lead">169 материалов о недвижимости Средиземноморья. Группировка — по странам, сортировка — от свежих к старым. Обновлено 21 июл 2026.</p>
     <div class="toc"><a href="#кипр">🇨🇾 Кипр <span class="ct">35</span></a> <a href="#турция">🇹🇷 Турция <span class="ct">9</span></a> <a href="#греция">🇬🇷 Греция <span class="ct">20</span></a> <a href="#испания">🇪🇸 Испания <span class="ct">37</span></a> <a href="#португалия">🇵🇹 Португалия <span class="ct">42</span></a> <a href="#италия">🇮🇹 Италия <span class="ct">20</span></a> <a href="#другое">🌊 Другое <span class="ct">6</span></a></div>
+    <div class="archive-tools" role="search">
+      <input class="archive-search" id="archiveSearch" type="search" placeholder="Поиск по заголовкам, странам и темам" autocomplete="off" aria-label="Поиск по архиву">
+      <button class="archive-reset" id="archiveReset" type="button">Сбросить</button>
+    </div>
+    <div class="archive-status" id="archiveStatus" aria-live="polite">Показано: 169</div>
   </section>
 
   <main>
@@ -2234,5 +2247,37 @@ footer.site a{color:var(--terracotta);text-decoration:none;margin:0 14px}
     © 2026 MedRealty · <a href="/">Главная</a> · <a href="https://t.me/MedRealtyNews">@MedRealtyNews</a> · <a href="/feed.xml">RSS</a>
   </footer>
 </div>
+<script>
+(() => {
+  const input = document.getElementById('archiveSearch');
+  const reset = document.getElementById('archiveReset');
+  const status = document.getElementById('archiveStatus');
+  const cards = [...document.querySelectorAll('.card')];
+  const sections = [...document.querySelectorAll('.region-section')];
+  const topics = {
+    prices: 'цены стоимость подорожал рынок', law: 'закон суд правила регулирование',
+    residency: 'внж виза резидент гражданство', tax: 'налог сбор пошлина',
+    rent: 'аренда арендатор краткосроч', investment: 'инвестиц доходность фонд'
+  };
+  const params = new URLSearchParams(location.search);
+  const initial = topics[params.get('topic')] || params.get('q') || '';
+  input.value = initial;
+  function apply() {
+    const terms = input.value.toLocaleLowerCase('ru').trim().split(/\s+/).filter(Boolean);
+    let visible = 0;
+    cards.forEach(card => {
+      const haystack = card.textContent.toLocaleLowerCase('ru');
+      const show = terms.every(term => haystack.includes(term));
+      card.hidden = !show;
+      if (show) visible++;
+    });
+    sections.forEach(section => section.hidden = !section.querySelector('.card:not([hidden])'));
+    status.textContent = terms.length ? `Найдено: ${visible}` : `Показано: ${visible}`;
+  }
+  input.addEventListener('input', apply);
+  reset.addEventListener('click', () => { input.value = ''; history.replaceState(null, '', location.pathname); apply(); input.focus(); });
+  apply();
+})();
+</script>
 </body>
 </html>
