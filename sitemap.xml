@@ -634,6 +634,70 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://medrealty.ru/posts/385.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://medrealty.ru/posts/385.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/posts/385.html"/>
+  </url>
+  <url>
+    <loc>https://medrealty.ru/en/posts/385.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/posts/385.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://medrealty.ru/posts/385.html"/>
+  </url>
+  <url>
+    <loc>https://medrealty.ru/posts/384.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://medrealty.ru/posts/384.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/posts/384.html"/>
+  </url>
+  <url>
+    <loc>https://medrealty.ru/en/posts/384.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/posts/384.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://medrealty.ru/posts/384.html"/>
+  </url>
+  <url>
+    <loc>https://medrealty.ru/posts/383.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://medrealty.ru/posts/383.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/posts/383.html"/>
+  </url>
+  <url>
+    <loc>https://medrealty.ru/en/posts/383.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/posts/383.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://medrealty.ru/posts/383.html"/>
+  </url>
+  <url>
+    <loc>https://medrealty.ru/posts/382.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://medrealty.ru/posts/382.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/posts/382.html"/>
+  </url>
+  <url>
+    <loc>https://medrealty.ru/en/posts/382.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/posts/382.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://medrealty.ru/posts/382.html"/>
+  </url>
+  <url>
     <loc>https://medrealty.ru/posts/381.html</loc>
     <lastmod>2026-09-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -3428,59 +3492,5 @@
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/posts/186.html"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://medrealty.ru/posts/186.html"/>
-  </url>
-  <url>
-    <loc>https://medrealty.ru/posts/185.html</loc>
-    <lastmod>2026-08-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://medrealty.ru/posts/185.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/posts/185.html"/>
-  </url>
-  <url>
-    <loc>https://medrealty.ru/en/posts/185.html</loc>
-    <lastmod>2026-08-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/posts/185.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://medrealty.ru/posts/185.html"/>
-  </url>
-  <url>
-    <loc>https://medrealty.ru/posts/184.html</loc>
-    <lastmod>2026-08-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://medrealty.ru/posts/184.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/posts/184.html"/>
-  </url>
-  <url>
-    <loc>https://medrealty.ru/en/posts/184.html</loc>
-    <lastmod>2026-08-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/posts/184.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://medrealty.ru/posts/184.html"/>
-  </url>
-  <url>
-    <loc>https://medrealty.ru/posts/183.html</loc>
-    <lastmod>2026-08-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://medrealty.ru/posts/183.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/posts/183.html"/>
-  </url>
-  <url>
-    <loc>https://medrealty.ru/en/posts/183.html</loc>
-    <lastmod>2026-08-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://medrealty.ru/en/posts/183.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://medrealty.ru/posts/183.html"/>
-  </url>
-  <url>
-    <loc>https://medrealty.ru/posts/182.html</loc>
-    <lastmod>2026-07-31</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
 </urlset>
