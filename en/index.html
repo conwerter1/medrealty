@@ -187,6 +187,29 @@ a:focus-visible{outline:3px solid var(--terracotta);outline-offset:4px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
 @media(max-width:900px){.hero{grid-template-columns:1fr;gap:32px;padding:44px 0 48px}.featured{padding:24px}.hero h1{font-size:clamp(48px,8vw,72px)}}
 @media(max-width:600px){.hero{padding:34px 0 40px;gap:30px}.hero h1{font-size:clamp(43px,11vw,56px);overflow-wrap:anywhere}.hero h1 .small{font-size:.36em;margin-top:14px}.hero .lead{font-size:16px}.featured{padding:20px}.featured h3 a{font-size:18px}.featured .dek{font-size:13px}.flourish{display:none}}
+</style><style id="editorial-styles">
+.editorial{margin:44px 0;padding:30px;background:#faf6ee;border:1px solid #d9c8b1;color:#1a1410}
+.editorial *{box-sizing:border-box}.editorial h2{font:600 clamp(25px,3vw,36px)/1.18 Fraunces,Georgia,serif;margin:0 0 20px}
+.editorial h3{font:600 23px/1.25 Fraunces,Georgia,serif;margin:30px 0 12px}.editorial p{max-width:76ch;margin:12px 0;font-size:16px;line-height:1.75}
+.editorial li{margin:9px 0;line-height:1.65}.editorial ul,.editorial ol{padding-left:22px}.editorial a{color:#a44429;text-underline-offset:3px;overflow-wrap:anywhere}.editorial nav{display:block}
+.editorial a:focus-visible,.guide-nav a:focus-visible{outline:3px solid #1f4a5c;outline-offset:5px}
+.editorial .byline,.editorial .source-note{font-size:12px;color:#4a3f33}.editorial .notice{padding:16px 20px;border-left:3px solid #c0532f;background:#f4ede3;font-size:14px}
+.guide-nav{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:26px 0}
+.guide-nav a{display:block;margin:0;padding:20px;border:1px solid #d9c8b1;background:#faf6ee;color:#1a1410;text-decoration:none;min-width:0;overflow-wrap:anywhere}
+.guide-nav strong{display:block;font:600 21px/1.25 Fraunces,Georgia,serif}.guide-nav span{display:block;margin-top:10px;font:13px/1.55 Inter,sans-serif;color:#4a3f33}
+.guide-section{padding:42px 0;border-bottom:1px solid #d9c8b1}.guide-section h2{font:600 clamp(29px,4vw,42px)/1.2 Fraunces,Georgia,serif;margin:0 0 12px}
+.guide-section .section-lead{max-width:70ch;color:#4a3f33;font:16px/1.65 Inter,sans-serif}.guide-section>h3{font:600 27px/1.3 Fraunces,Georgia,serif;margin:28px 0 12px}
+.trust-nav{display:flex;flex-wrap:wrap;gap:18px;margin:22px 0;font:13px/1.5 Inter,sans-serif}.trust-nav a{color:inherit;text-underline-offset:3px}
+.guide-page{max-width:1120px;margin:auto;padding:0 30px}.guide-page header{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding:24px 0;border-bottom:1px solid #d9c8b1}
+.guide-page .brand{font:900 24px Fraunces,Georgia,serif;color:#1a1410;text-decoration:none}.guide-page header nav{display:flex;flex-wrap:wrap;gap:18px}.guide-page header nav a{font-size:13px;color:#4a3f33}
+.guide-page .hero{padding:45px 0 18px}.guide-page h1{font:650 clamp(35px,5vw,64px)/1.06 Fraunces,Georgia,serif;letter-spacing:-.025em;margin:15px 0 22px;max-width:1000px;overflow-wrap:anywhere}
+.guide-page .eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#a44429}.guide-page .lead{font:18px/1.65 Inter,sans-serif;max-width:78ch;color:#4a3f33}
+.guide-page .breadcrumbs{font-size:12px;color:#4a3f33;display:flex;gap:10px;flex-wrap:wrap}.guide-page .breadcrumbs a{color:inherit}
+.guide-page .news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:25px 0 45px}.guide-page .news-grid article{background:#faf6ee;padding:23px;border:1px solid #d9c8b1;min-width:0;overflow-wrap:anywhere}
+.guide-page .news-grid h2{font:500 23px/1.2 Fraunces,Georgia,serif;margin:12px 0}.guide-page .news-grid h2 a{color:#1a1410;text-decoration:none}.guide-page .news-grid p{font-size:14px;color:#4a3f33;line-height:1.65}
+.guide-page .meta,.guide-page .read{font-size:12px;color:#a44429}.guide-page .archive-link{display:inline-block;margin:10px 0 20px;color:#a44429}.guide-page .news-heading{font:600 30px/1.2 Fraunces,Georgia,serif}
+.guide-page footer{padding:28px 0;border-top:1px solid #d9c8b1;color:#4a3f33;font-size:12px}.guide-page a:focus-visible{outline:3px solid #1f4a5c;outline-offset:5px}
+@media(max-width:760px){.guide-nav{grid-template-columns:1fr}.editorial{padding:22px}.guide-page{padding:0 20px}.guide-page .news-grid{grid-template-columns:1fr}.guide-page header nav{gap:14px}.guide-section{padding:30px 0}}
 </style></head>
 <body>
 <div class="container">
@@ -258,7 +281,8 @@ a:focus-visible{outline:3px solid var(--terracotta);outline-offset:4px}
     <div class="stat"><div class="num">7/7</div><div class="lbl">Days a week</div></div>
   </section>
 
-  <section class="regions" id="regions">
+  <!-- EDITORIAL_GUIDES_START --><section class="guide-section"><h2>Buying and renting: start here</h2><p class="section-lead">Editorial guides backed by official sources. Follow the news for changes; use these guides to frame your decision.</p><h3>Portugal</h3><nav class="guide-nav" aria-label="Guides"><a href="/en/guides/portugal-prices.html"><strong>Lisbon or Porto: compare your property purchase budget</strong><span>A practical method for comparing homes in Lisbon and Porto using consistent specifications, clearly identified price data and a complete acquisition budget.</span></a><a href="/en/guides/portugal-taxes.html"><strong>Buying property in Portugal: build a complete cost budget</strong><span>How to organise IMT, stamp duty, completion expenses and first-year ownership costs in Portugal without assuming universal tax rates or exemptions.</span></a><a href="/en/guides/portugal-law.html"><strong>Property due diligence in Portugal: documents before buying</strong><span>Prepare a property review in Portugal: registered rights, tax records, permitted use, building condition and questions to resolve before a preliminary contract.</span></a></nav><h3>Spain</h3><nav class="guide-nav" aria-label="Guides"><a href="/en/guides/spain-prices.html"><strong>Buying property in Spain: build a complete budget</strong><span>Separate the asking price from transaction taxes, professional fees, mortgage costs and ownership expenses. A practical checklist without invented market prices.</span></a><a href="/en/guides/spain-rent.html"><strong>Renting property in Spain: residential, seasonal or tourist use?</strong><span>Compare Spanish rental models through contract purpose, address-specific rules, recent legal changes and operating costs rather than guaranteed yields.</span></a><a href="/en/guides/spain-law.html"><strong>Buying a home in Spain as a foreigner: checks before signing</strong><span>A due-diligence sequence covering NIE, the seller and title, property documents, initial agreements, the notary and registration of ownership.</span></a></nav></section><!-- EDITORIAL_GUIDES_END -->
+<section class="regions" id="regions">
     <div class="regions-head">
       <div class="title">Geography <span class="num">06</span></div>
       <div class="sort">— By volume of stories</div>
@@ -366,7 +390,7 @@ a:focus-visible{outline:3px solid var(--terracotta);outline-offset:4px}
       <span>© 2026 MedRealty</span>
       <span>Made with love for the Mediterranean</span>
     </div>
-  </footer>
+  <!-- EDITORIAL_TRUST_START --><nav class="trust-nav" aria-label="About the publisher"><a href="/en/about.html">About</a><a href="/en/editorial.html">Editorial policy</a><a href="/en/team.html">Editorial team</a></nav><!-- EDITORIAL_TRUST_END --></footer>
 </div>
 
 </body>
