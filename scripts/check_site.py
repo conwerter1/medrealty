@@ -3,6 +3,7 @@ from html.parser import HTMLParser
 from urllib.parse import urlparse
 from html import unescape
 import re
+import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -35,6 +36,18 @@ assert issue_ids[0] == issue_ids[1], f'RU/EN issue mismatch: {issue_ids}'
 for name in (f'posts/{issue_ids[0]}.html', f'en/posts/{issue_ids[0]}.html'):
     assert (ROOT / name).is_file(), f'Missing latest article: {name}'
 
+indexed_pages = set()
+for node in ET.parse(ROOT / 'sitemap.xml').findall('{*}url/{*}loc'):
+    path = urlparse(node.text).path.lstrip('/')
+    indexed_pages.add(ROOT / (path + 'index.html' if path.endswith('/') or not path else path))
+
 for p in ROOT.rglob('*.html'):
-    MetaParser().feed(p.read_text(encoding='utf-8'))
+    text = p.read_text(encoding='utf-8')
+    MetaParser().feed(text)
+    # Search-engine ownership verification files are not content pages.
+    if p not in indexed_pages:
+        continue
+    counter_ids = re.findall(r"\bym\(\s*(\d+)\s*,\s*['\"]init['\"]", text)
+    assert counter_ids == ['109342254'], f'Missing, conflicting or duplicate Metrika counter: {p.relative_to(ROOT)}'
+    assert 'mc.yandex.ru/metrika/tag.js' in text, f'Missing Metrika loader: {p.relative_to(ROOT)}'
 print(f'Site entry points, issue {issue_ids[0]} and social preview assets: OK')
