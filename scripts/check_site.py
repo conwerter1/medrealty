@@ -1,6 +1,7 @@
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlparse
+from html import unescape
 import re
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -25,6 +26,11 @@ for name in ('index.html', 'en/index.html'):
     match = re.search(r'(?:Выпуск|Issue)\s*(?:№|No\.)?\s*<strong>\s*(?:№|No\.)?\s*(\d+)\s*</strong>', page)
     assert match, f'No issue number in {name}'
     issue_ids.append(int(match.group(1)))
+    featured = re.findall(r'<h3>\s*<a[^>]+href="/(?:en/)?posts/\d+\.html"[^>]*>(.*?)</a>\s*</h3>', page, re.S)
+    assert featured, f'No featured article headlines in {name}'
+    for raw_title in featured:
+        title = unescape(re.sub(r'<[^>]+>', '', raw_title)).strip()
+        assert len(title) <= 160, f'Featured headline too long in {name}: {len(title)} chars'
 assert issue_ids[0] == issue_ids[1], f'RU/EN issue mismatch: {issue_ids}'
 for name in (f'posts/{issue_ids[0]}.html', f'en/posts/{issue_ids[0]}.html'):
     assert (ROOT / name).is_file(), f'Missing latest article: {name}'

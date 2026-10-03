@@ -110,7 +110,7 @@ body::after{
 .featured h3 a:hover{color:var(--terracotta)}
 .flourish{position:absolute;top:-30px;right:-10px;font-family:'Fraunces',serif;font-style:italic;font-size:340px;font-weight:100;color:var(--terracotta);opacity:.07;line-height:1;pointer-events:none;z-index:-1}
 </style>
-</head><style>
+<style>
 .stats{display:grid;grid-template-columns:repeat(4,1fr);padding:36px 0;border-bottom:1px solid var(--line)}
 .stat .num{font-family:'Fraunces',serif;font-weight:900;font-size:56px;letter-spacing:-.03em;line-height:1}
 .stat .num.accent{color:var(--terracotta)}
@@ -168,6 +168,25 @@ footer{padding:48px 0 36px;font-size:13px;color:var(--ink-soft)}
   .cta-inner{grid-template-columns:1fr;text-align:center}
   .foot-grid{grid-template-columns:1fr 1fr;gap:32px}
 }
+/* Editorial homepage layout */
+.container{max-width:1380px}
+.hero{grid-template-columns:minmax(0,1.16fr) minmax(350px,.84fr);gap:clamp(36px,4vw,72px);align-items:start;padding:clamp(44px,5vw,72px) 0 58px}
+.hero>div:first-child{min-width:0}
+.hero .eyebrow{margin-bottom:22px}
+.hero h1{font-size:clamp(50px,4.5vw,78px);line-height:1.02;letter-spacing:-.045em;margin-bottom:24px}
+.hero h1 .small{font-size:.35em;line-height:1.25;margin-top:18px;letter-spacing:-.02em}
+.hero .lead{font-size:17px;line-height:1.55;margin-bottom:28px;max-width:620px}
+.featured{min-width:0;padding:26px 30px;background:var(--paper);border:1px solid var(--line);box-shadow:0 18px 42px rgba(26,20,16,.045)}
+.featured .label{margin-bottom:18px;color:var(--terracotta);font-weight:700}
+.featured article{margin-bottom:18px;padding-bottom:18px}
+.featured h3{margin:0}
+.featured h3 a{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden;font-size:20px;line-height:1.28;font-weight:600}
+.featured .dek{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;line-clamp:2;overflow:hidden;margin-top:7px;font-size:13px;line-height:1.5;color:var(--ink-soft)}
+.flourish{top:25px;right:44%;font-size:260px}
+a:focus-visible{outline:3px solid var(--terracotta);outline-offset:4px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+@media(max-width:900px){.hero{grid-template-columns:1fr;gap:32px;padding:44px 0 48px}.featured{padding:24px}.hero h1{font-size:clamp(48px,8vw,72px)}}
+@media(max-width:600px){.hero{padding:34px 0 40px;gap:30px}.hero h1{font-size:clamp(43px,11vw,56px);overflow-wrap:anywhere}.hero h1 .small{font-size:.36em;margin-top:14px}.hero .lead{font-size:16px}.featured{padding:20px}.featured h3 a{font-size:18px}.featured .dek{font-size:13px}.flourish{display:none}}
 </style></head>
 <body>
 <div class="container">
@@ -204,7 +223,7 @@ footer{padding:48px 0 36px;font-size:13px;color:var(--ink-soft)}
         <span class="small">— no rose-tinted glasses, no broker bias</span>
       </h1>
       <p class="lead">
-        Daily market review: Turkey, Cyprus, Greece, Spain. Prices, laws, residency, investments. Read by those making €100K+ decisions.
+        Daily coverage across Portugal, Spain, Cyprus, Italy, Greece and Turkey. Property prices, laws, residency and investment, with links to original sources.
       </p>
       <div class="cta-row">
         <a class="btn primary" href="https://t.me/MedRealtyNews" target="_blank" rel="noopener">Subscribe on Telegram <span class="arrow">→</span></a>
@@ -215,15 +234,18 @@ footer{padding:48px 0 36px;font-size:13px;color:var(--ink-soft)}
       <div class="label">— Latest stories</div>
       <article>
         <div class="meta"><span class="country">🇵🇹 Portugal</span><span>·</span><span>October 3</span></div>
-        <h3><a href="/en/posts/397.html">Areas of Lisbon, known for its past grandeur and quiet atmosphere, have become the center of the luxury new-build market. Avenda da Liberdade Avenue, called Paris&#x27; answer to the Champs-Elysees, offers prices up to 12000 EUR per square meter. This reflects the lack of supply and the interest of international buyers.</a></h3>
+        <h3><a href="/en/posts/397.html">The neighbourhoods defining Lisbon’s luxury new homes scene</a></h3>
+        <p class="dek">The Principe Real district has cemented the reputation of the city&#x27;s trendiest postcode.</p>
       </article>
       <article>
         <div class="meta"><span class="country">🇪🇸 Spain</span><span>·</span><span>October 3</span></div>
-        <h3><a href="/en/posts/396.html">The short-term rental sector in Spain is preparing claims for compensation to almost 500000000 EUR following the repeal of the register by the Supreme Court. The Tourist Housing Federation (Fevitur) estimates the loss of property owners in 496000000 EUR. On average, each owner suffered losses around 33000 EUR due to lost profits and the cost of complying with the illegal system. The court pointed out that the decree exceeded the powers of the state by creating a national register instead of coordinating regional systems. A Council of State lawyer confirmed that the authorities ignored warnings about the legal vulnerability of the decree. Fevitur is exploring the possibility of legal action for damages to owners. The question remains about the validity of previously issued registration numbers, according to registrars, they remain in force, but industry lawyers believe otherwise.</a></h3>
+        <h3><a href="/en/posts/396.html">Illegal rental registry could cost Spain hundreds of millions in compensation</a></h3>
+        <p class="dek">The short-term rental sector in Spain is preparing claims for compensation to almost €500,000,000 following the repeal of the register by the Supreme…</p>
       </article>
       <article>
         <div class="meta"><span class="country">🇬🇷 Greece</span><span>·</span><span>October 2</span></div>
-        <h3><a href="/en/posts/395.html">The court of first instance of Athens in the decision No 2937/2026 forbade the owner of the company to use an apartment in an apartment building for short-term professional rent. The violation will result in a 1000 EUR fine for each violation. The court found that the work in the Airbnb format disturbed the peace of neighbors and affected the operation of the entire building. According to the rules of the house, apartments are only for living and can not be used as hotels. The decision was made due to a rise in the number of such properties in Greece ahead of major reforms to apartment building legislation, which have not changed since 1929.</a></h3>
+        <h3><a href="/en/posts/395.html">Court Ruling Restricts Airbnb Operations in Apartment Buildings in Greece</a></h3>
+        <p class="dek">The court of first instance of Athens in the decision No 2937/2026 forbade the owner of the company to use an apartment in an apartment building for…</p>
       </article>
     </div>
     <div class="flourish">M</div>
@@ -232,7 +254,7 @@ footer{padding:48px 0 36px;font-size:13px;color:var(--ink-soft)}
   <section class="stats">
     <div class="stat"><div class="num accent">397</div><div class="lbl">Articles archive</div></div>
     <div class="stat"><div class="num">6</div><div class="lbl">Countries covered</div></div>
-    <div class="stat"><div class="num">8</div><div class="lbl">RSS sources</div></div>
+    <div class="stat"><div class="num">10</div><div class="lbl">RSS sources</div></div>
     <div class="stat"><div class="num">7/7</div><div class="lbl">Days a week</div></div>
   </section>
 
