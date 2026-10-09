@@ -6,8 +6,20 @@
   <atom:link href="https://medrealty.ru/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Ежедневные новости рынка недвижимости Португалии, Италии, Кипра, Турции, Греции и Испании.</description>
   <language>ru</language>
-  <lastBuildDate>Fri, 09 Oct 2026 08:15:35 +0000</lastBuildDate>
+  <lastBuildDate>Fri, 09 Oct 2026 10:20:43 +0000</lastBuildDate>
 
+  <item>
+    <title>Статьи резидентами Италии налоговые обязательства распространяются…</title>
+    <link>https://telegra.ph/Stati-rezidentami-Italii-nalogovye-obyazatelstva-rasprostranyayutsya-na-ves-mirovoj-dohod-vklyuchaya-vyplaty-iz-pensij-i-sberega-10-09</link>
+    <guid isPermaLink="true">https://telegra.ph/Stati-rezidentami-Italii-nalogovye-obyazatelstva-rasprostranyayutsya-na-ves-mirovoj-dohod-vklyuchaya-vyplaty-iz-pensij-i-sberega-10-09</guid>
+    <description>Статьи резидентами Италии налоговые обязательства распространяются на весь мировой доход, включая выплаты из пенсий и сберегательных планов. Это правило действует независимо от того, где хранятся средства или откуда поступают выплаты.
+
+Однако не все иностранные счета облагаются налогом автоматически. Статус пенсионного плана определяется по его юридическим характеристикам, а не по названию продукта. Детали зависят от условий договора и применимых соглашений об избежании двойного налогообложения.
+
+#Италия #Налоги #Пенсионеры</description>
+    <pubDate>Fri, 09 Oct 2026 10:20:21 +0000</pubDate>
+    <source url="https://www.thelocal.it/20260929/do-you-have-to-pay-italian-taxes-on-your-foreign-retirement-funds">оригинал</source>
+  </item>
   <item>
     <title>Покупка недвижимости на озерах Комо, Гарда и Маджоре требует тщательной подготовки.</title>
     <link>https://telegra.ph/Pokupka-nedvizhimosti-na-ozerah-Komo-Garda-i-Madzhore-trebuet-tshchatelnoj-podgotovki-Ceny-zdes-znachitelno-vyshe-italyanskogo-s-10-09</link>
@@ -621,20 +633,6 @@
 #недвижимостьГреция #промышленноеперепрофилирование</description>
     <pubDate>Thu, 01 Oct 2026 15:10:35 +0000</pubDate>
     <source url="https://greekcitytimes.com/2026/08/01/greece-allows-conversion-old-buildings-into-apartments/">оригинал</source>
-  </item>
-  <item>
-    <title>Более €105 млн вливается в социальное жильё на Алгарве.</title>
-    <link>https://telegra.ph/Bolee-105-mln-vlivaetsya-v-socialnoe-zhilyo-na-Algarve-Sem-municipalitetov-podali-zayavki-na-11-proektov-ot-stroitelstva-novyh-d-09-30</link>
-    <guid isPermaLink="true">https://telegra.ph/Bolee-105-mln-vlivaetsya-v-socialnoe-zhilyo-na-Algarve-Sem-municipalitetov-podali-zayavki-na-11-proektov-ot-stroitelstva-novyh-d-09-30</guid>
-    <description>Более €105 млн вливается в социальное жильё на Алгарве. Семь муниципалитетов подали заявки на 11 проектов: от строительства новых домов до реновации существующих зданий.
-
-Лиссабон пока не участвует, но регион активно финансирует доступное жильё из Европейского фонда регионального развития. Пока закрыт первый этап заявок на €28 млн, второй открыт до марта 2027 года. Программа покроет от 30 до 70% затрат при соблюдении экологических норм.
-
-Португалия продолжает бороться с нехваткой affordable housing и развивает инфраструктуру для студентов и рабочих.
-
-#Португалия #СоциальноеЖильё</description>
-    <pubDate>Wed, 30 Sep 2026 07:02:17 +0000</pubDate>
-    <source url="https://www.theportugalnews.com/news/2026-09-29/algarve-2030-backs-social-housing-projects-across-seven-municipalities/1093842">оригинал</source>
   </item>
 </channel>
 </rss>
